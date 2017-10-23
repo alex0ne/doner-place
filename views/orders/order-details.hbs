@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doner Place</title>
+    <link href="static/css/site.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span class="logo">Doner  Place</span>
+            <span class="greeting">Welcome {{ currentUser.username}}! | <a href="javascript:document.getElementById('logout-form').submit()">[Logout]</a></span>
+            <ul class="menu">
+				<li><a class="button" href="/">Home</a></li>
+                <li><a class="button" href="#">Order Status</a></li>
+                <li><a class="button" href="/login">Login</a></li>
+                <li><a class="button" href="/register">Register</a></li>
+            </ul>
+        </header>
+        <main>
+            <h1>Order details</h1>
+            <div class="catalog">
+                <div class="column">
+                    <img src="https://igx.4sqi.net/img/general/200x200/144058399_HvKVeGihLlSEeDKonSu0AhAdG2wDTDNrE8s3ZRLxQts.png">
+                </div>
+                <div class="column">
+                    <h2>Chicken doner, 21cm</h2>
+                    <h3>From 22.Oct 2017 10:35</h3>
+                    <div class="toppings">
+                        Pickles<br>
+                        Tomato<br>
+                        Onion<br>
+                        Lettuce<br>
+                    </div>
+                </div>
+                <div class="status">
+                    <div class="status-block">
+                        <span class="progress-right"></span>
+                        <span class="checkpoint"></span><br>
+                        Pending
+                    </div>
+                    <div class="status-block">
+                        <span class="progress-left"></span>
+                        <span class="progress-right"></span>
+                        <span class="checkpoint current"></span><br>
+                        In progress
+                    </div>
+                    <div class="status-block">
+                        <span class="progress-left"></span>
+                        <span class="progress-right"></span>
+                        <span class="checkpoint"></span><br>
+                        In transit
+                    </div>
+                    <div class="status-block">
+                        <span class="progress-left"></span>
+                        <span class="checkpoint"></span><br>
+                        Delivered
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>Doner Place &copy; 2017</footer>
+    </div>
+</body>
+</html>

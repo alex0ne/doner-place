@@ -9,12 +9,13 @@
     <div class="container">
         <header>
             <span class="logo">Doner  Place</span>
-            <span class="greeting">Welcome, Pesho! | <a href="#">[logout]</a></span>
+            <span class="greeting">Welcome {{ currentUser.username}}! | <a href="javascript:document.getElementById('logout-form').submit()">[Logout]</a></span>
             <ul class="menu">
-				<li><a class="button" href="index.html">Home</a></li>
-                <li><a class="button" href="order-status.html">Order Status</a></li>
-                <li><a class="button" href="login.html">Login</a></li>
-                <li><a class="button" href="register.html">Register</a></li>
+				<li><a class="button" href="/">Home</a></li>
+                <li><a class="button" href="#">Order Status</a></li>
+                <li><a class="button" href="/login">Login</a></li>
+                <li><a class="button" href="/register">Register</a></li>
+                <li><a class="button" href="/create-product">Create Product</a></li>
             </ul>
         </header>
         <main>
@@ -22,17 +23,17 @@
             <p>We offer a wide variety of tasty doner kebab, cutosmized to your liking. Choose from different sizes of chicken, beef and lamb and any topping you want. Place your order now!</p>
             <div class="products">
                 <h2>Chicken Doner</h2>
-                <div class="product-card"><img src="static/img/chicken-17.png"><a href="customize-order.html" class="button product-title">Order</a></div>
-                <div class="product-card"><img src="static/img/chicken-21.png"><a href="customize-order.html" class="button product-title">Order</a></div>
-                <div class="product-card"><img src="static/img/chicken-24.png"><a href="customize-order.html" class="button product-title">Order</a></div>
+                <div class="product-card"><img src="https://igx.4sqi.net/img/general/200x200/144058399_HvKVeGihLlSEeDKonSu0AhAdG2wDTDNrE8s3ZRLxQts.png"><a href="/order" class="button product-title">Order</a></div>
+                <div class="product-card"><img src="https://igx.4sqi.net/img/general/200x200/144058399_HvKVeGihLlSEeDKonSu0AhAdG2wDTDNrE8s3ZRLxQts.png"><a href="/order" class="button product-title">Order</a></div>
+                <div class="product-card"><img src="https://igx.4sqi.net/img/general/200x200/144058399_HvKVeGihLlSEeDKonSu0AhAdG2wDTDNrE8s3ZRLxQts.png"><a href="/order" class="button product-title">Order</a></div>
                 <h2>Beef Doner</h2>
-                <div class="product-card"><img src="static/img/beef-17.png"><a href="customize-order.html" class="button product-title">Order</a></div>
-                <div class="product-card"><img src="static/img/beef-21.png"><a href="customize-order.html" class="button product-title">Order</a></div>
-                <div class="product-card"><img src="static/img/beef-24.png"><a href="customize-order.html" class="button product-title">Order</a></div>
+                <div class="product-card"><img src="https://igx.4sqi.net/img/general/200x200/144058399_HvKVeGihLlSEeDKonSu0AhAdG2wDTDNrE8s3ZRLxQts.png"><a href="/order" class="button product-title">Order</a></div>
+                <div class="product-card"><img src="https://igx.4sqi.net/img/general/200x200/144058399_HvKVeGihLlSEeDKonSu0AhAdG2wDTDNrE8s3ZRLxQts.png"><a href="/order" class="button product-title">Order</a></div>
+                <div class="product-card"><img src="https://igx.4sqi.net/img/general/200x200/144058399_HvKVeGihLlSEeDKonSu0AhAdG2wDTDNrE8s3ZRLxQts.png"><a href="/order" class="button product-title">Order</a></div>
                 <h2>Lamb Doner</h2>
-                <div class="product-card"><img src="static/img/lamb-17.png"><a href="customize-order.html" class="button product-title">Order</a></div>
-                <div class="product-card"><img src="static/img/lamb-21.png"><a href="customize-order.html" class="button product-title">Order</a></div>
-                <div class="product-card"><img src="static/img/lamb-24.png"><a href="customize-order.html" class="button product-title">Order</a></div>
+                <div class="product-card"><img src="https://igx.4sqi.net/img/general/200x200/144058399_HvKVeGihLlSEeDKonSu0AhAdG2wDTDNrE8s3ZRLxQts.png"><a href="/order" class="button product-title">Order</a></div>
+                <div class="product-card"><img src="https://igx.4sqi.net/img/general/200x200/144058399_HvKVeGihLlSEeDKonSu0AhAdG2wDTDNrE8s3ZRLxQts.png"><a href="/order" class="button product-title">Order</a></div>
+                <div class="product-card"><img src="https://igx.4sqi.net/img/general/200x200/144058399_HvKVeGihLlSEeDKonSu0AhAdG2wDTDNrE8s3ZRLxQts.png"><a href="/order" class="button product-title">Order</a></div>
             </div>
         </main>
         <footer>Doner Place &copy; 2017</footer>
